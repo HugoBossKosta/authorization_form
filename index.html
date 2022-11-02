@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>regForm</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form class="form form-register">
+            <h2 class="form-title text">Регистрация</h2>
+                <a class="link-textBlue link-text" href="./page/auth.html">Авторизоваться</a>
+                <div class="form__item">
+                    <span class="form__item-title 
+                    errEmail text">Email</span>
+                    <input id="email-reg" type="text" placeholder="Введите email" class="form__item-input">
+                    <span class="error" id="email-empty">Поле обязательно для заполнения</span>
+                    <span class="error" id="email-valid">Email невалидный</span>
+                </div>
+                <div class="form__item">
+                    <span class="form__item-title 
+                    errPass text">Пароль</span>
+                    <input id="password-reg" type="text" placeholder="Введите пароль" class="form__item-input">
+                    <span class="error" id="password-empty">Поле обязательно для заполнения</span>
+                    <span class="error" id="password-lenght">Пароль должен содержать как миниму 8 символов</span>
+                </div>
+
+          
+                <div class="form__item">
+                    <label class="lab-reg text">
+                        <input type="checkbox" name="coding-notes" id="check-reg" class="real_checkbox">
+                        <span class="custom_checkbox"></span>
+                        Я согласен с
+                        <a class="link-textGrey link-text" href="">Правилами пользования приложением</a>
+                    </label>
+                    <span class="error" id="check-empty">Поле обязательно для заполнения</span>
+                </div>
+
+
+
+                <button id="btn-reg" class="form__submit button">Регистрация</button>
+        </form>
+    </div>
+
+    
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
